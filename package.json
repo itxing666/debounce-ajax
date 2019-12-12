@@ -1,6 +1,6 @@
 {
   "name": "debounce-ajax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "防重复提交请求",
   "main": "index.js",
   "scripts": {

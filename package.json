@@ -1,12 +1,19 @@
 {
   "name": "debounce-ajax",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "防重复提交请求",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "git repository": "git@github.com:itxing666/debounce-ajax.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itxing666/debounce-ajax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itxing666/debounce-ajax/issues"
+  },
+  "homepage": "https://github.com/itxing666/debounce-ajax#readme",
   "keywords": ["debounce", "request"],
   "author": "itxing",
   "license": "ISC"

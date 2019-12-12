@@ -1,36 +1,36 @@
-let requestKeyList = {}  // api 请求记录
+let keyList = {}  // api 请求记录
 
 function getKeyList() {
-  return requestKeyList
+  return keyList
 }
 
 function addKey(key) {
-  requestKeyList[key] = true
+  keyList[key] = true
 }
 
 function removeKey(key) {
-  delete requestKeyList[key]
+  delete keyList[key]
 }
 
 function hitKey(key) {
-  return requestKeyList[key]
+  return keyList[key]
 }
 
 // 根据请求地址、参数组装成api请求的key
-function getRequestKey(data) {
-  let ajaxKey = 'Method:' + data.method + ',Url:' + data.url + ',Data:'
+function getKey(data) {
+  let key = 'Method:' + data.method + ',Url:' + data.url + ',Data:'
   try {
-    ajaxKey += JSON.stringify(data.data)
+    key += JSON.stringify(data.data)
   } catch (e) {
-    ajaxKey += data.data
+    key += data.data
   }
-  return ajaxKey
+  return key
 }
 
 module.exports = {
   addKey,
   removeKey,
   hitKey,
-  getRequestKey,
+  getKey,
   getKeyList
 }

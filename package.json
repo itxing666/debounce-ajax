@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "git repository": "git@github.com:itxing666/debounce-ajax.git",
+  "keywords": ["debounce", "request"],
   "author": "itxing",
   "license": "ISC"
 }

@@ -1,4 +1,4 @@
-let keyList = {}  // api 请求记录
+var keyList = {}  // api 请求记录
 
 function getKeyList() {
   return keyList
@@ -18,7 +18,7 @@ function hitKey(key) {
 
 // 根据请求地址、参数组装成api请求的key
 function getKey(data) {
-  let key = 'Method:' + data.method + ',Url:' + data.url + ',Data:'
+  var key = 'Method:' + data.method + ',Url:' + data.url + ',Data:'
   try {
     key += JSON.stringify(data.data)
   } catch (e) {
@@ -27,10 +27,9 @@ function getKey(data) {
   return key
 }
 
-module.exports = {
-  addKey,
-  removeKey,
-  hitKey,
-  getKey,
-  getKeyList
-}
+exports.addKey = addKey
+exports.removeKey = removeKey
+exports.hitKey = hitKey
+exports.getKey = getKey
+exports.getKeyList = getKeyList
+

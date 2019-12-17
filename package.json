@@ -1,10 +1,11 @@
 {
   "name": "debounce-ajax",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "防重复提交请求",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d lib/ src/"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,14 @@
     "url": "https://github.com/itxing666/debounce-ajax/issues"
   },
   "homepage": "https://github.com/itxing666/debounce-ajax#readme",
-  "keywords": ["debounce", "request"],
+  "keywords": [
+    "debounce",
+    "request"
+  ],
   "author": "itxing",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
